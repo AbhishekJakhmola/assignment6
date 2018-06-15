@@ -1,0 +1,17 @@
+n=int(input("Enter length of the list "  ))
+list1=[]
+flag = 0
+for i in range (n):
+    x=input("enter element \n")
+    list1.insert(i,x)
+    i+=1
+m=input("Enter the element to be deleted "  )
+for i in range (n):
+    if list1[i]==m:
+        del list1[i]
+        print("Number deleted.")
+        flag=1
+if flag==0:
+    print("No such element exist.")
+print("The list is ")
+print(list1)
