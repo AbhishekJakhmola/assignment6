@@ -1,0 +1,31 @@
+list1= [1,4.7,'in',6,9.0,'to',87,9.45]
+
+list2=[]
+
+list3=[]
+
+list4=[]
+
+x=len(list1)
+
+for i in range(x):
+
+    n=list1[i]
+
+    if type(n)==int:
+
+        list2.append(n)
+
+    elif type(n)==float:
+
+        list3.append(n)
+
+    else:
+
+        list4.append(n)
+
+print(list2)
+
+print(list3)
+
+print(list4)
